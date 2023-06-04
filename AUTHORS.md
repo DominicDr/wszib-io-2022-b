@@ -1,1 +1,2 @@
 Dominik Drążek
+Sylwia Bajak
