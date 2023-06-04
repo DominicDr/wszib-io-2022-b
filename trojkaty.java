@@ -9,14 +9,7 @@ class Trojkaty {
      * @param {float} b - Długość drugiego boku.
      * @param {float} c - Długość trzeciego boku.
      */
-    public static void jakiTrojkat(float a, float b, float c){
-         if (a == b && b == c) {
-             System.out.println("Trójkąt równoboczny"); 
-         }
-         if (a == b || b == c || a == c) {
-                    System.out.println("Trójkąt równoramienny");
-         }
-    }
+    
 
                 /**
                 * Funkcja do sprawdzenia czy trójkąt o podanych bokach to trójkąt prostokątny.
@@ -30,14 +23,22 @@ class Trojkaty {
                    if (a * a + c * c == b*b) return true;
                    return false;
                }
-               ...
-               public static void jakiTrojkat(float a, float b, float c){
-                  ...
-                  if (czyProstokatny(a, b, c)) {
-                    System.out.println("Trójkąt prostokątny");
-                  }
-                  ...
+               
              }
+
+ public static void jakiTrojkat(float a, float b, float c){
+         if (a == b && b == c) {
+             System.out.println("Trójkąt równoboczny");
+         }
+         if (a == b || b == c || a == c) {
+                    System.out.println("Trójkąt równoramienny");
+         }
+         if (czyProstokatny(a, b, c)) {
+                System.out.println("Trójkąt prostokątny");
+         }
+
+
+    }
 
     /** Wyświetla ekran pomocy */
     public static void pomoc(){
